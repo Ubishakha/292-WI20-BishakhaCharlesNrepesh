@@ -201,7 +201,7 @@ Transform:
   m_LocalScale: {x: 0.92845833, y: 0.9444943, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &759410956 stripped
 RectTransform:
@@ -209,6 +209,75 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1540756014173065352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &836639790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.1845922
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1913512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163818893714312156, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469382652792572774, guid: 9ff7d11831633944b880e9f2efb53e87,
+        type: 3}
+      propertyPath: m_Name
+      value: CornellCollege
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ff7d11831633944b880e9f2efb53e87, type: 3}
 --- !u!224 &886526908 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4602626149877887426, guid: 8e6cc288861e44683b85f23cf5563edb,
@@ -309,7 +378,7 @@ RectTransform:
   - {fileID: 886526908}
   - {fileID: 2005359195}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -380,7 +449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &2005359195 stripped
 RectTransform:
