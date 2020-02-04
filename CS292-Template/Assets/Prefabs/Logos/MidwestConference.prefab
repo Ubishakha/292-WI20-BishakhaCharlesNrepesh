@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2170664952060981205}
   - component: {fileID: 745843012087128878}
   - component: {fileID: -4847338208053667115}
+  - component: {fileID: 6487196582953023352}
+  - component: {fileID: 5141298283638155614}
   m_Layer: 0
   m_Name: MidwestConference
   m_TagString: Untagged
@@ -102,3 +104,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &6487196582953023352
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7764772577507212604}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.625
+--- !u!114 &5141298283638155614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7764772577507212604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72681a2d0404ee845bd8c97f663aec94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
