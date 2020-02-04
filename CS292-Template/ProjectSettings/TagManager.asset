@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Blade
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Background
   - Above UI
-  - 
+  - Blade
   - 
   - 
   - 
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Above UI
     uniqueID: 2352488191
+    locked: 0
+  - name: Blade
+    uniqueID: 2273524821
     locked: 0

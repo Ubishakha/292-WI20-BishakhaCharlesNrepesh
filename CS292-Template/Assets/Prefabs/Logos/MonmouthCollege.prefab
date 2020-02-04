@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7906199563277523193}
   - component: {fileID: -7000392015326540143}
   - component: {fileID: -7019273572881227859}
+  - component: {fileID: 8269496261870873198}
+  - component: {fileID: 1922212720448045744}
   m_Layer: 0
   m_Name: MonmouthCollege
   m_TagString: Untagged
@@ -117,3 +119,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logoPrefab: {fileID: 5912874425705044872}
   startForce: 15
+--- !u!58 &8269496261870873198
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5912874425705044872}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.0849999
+--- !u!114 &1922212720448045744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5912874425705044872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72681a2d0404ee845bd8c97f663aec94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

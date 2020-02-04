@@ -21,7 +21,7 @@ public class LogoSpwanerScript : MonoBehaviour
             int spawnIndex = Random.Range(0, spawnPoints.Length);
             Transform spawnPoint = spawnPoints[spawnIndex];
             GameObject randomLogo = logos[Random.Range(0, logos.Length)];
-            Instantiate(randomLogo, spawnPoint.position, spawnPoint.rotation);
+            Instantiate(randomLogo, spawnPoint.position, spawnPoint.rotation);      
         }   
     }
 }
