@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6402932178216817846}
   - component: {fileID: 1581635610695565526}
   - component: {fileID: -5108641748500964631}
+  - component: {fileID: 434385593369994332}
+  - component: {fileID: 6167760885837184440}
   m_Layer: 0
   m_Name: LakeForest
   m_TagString: Untagged
@@ -117,3 +119,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logoPrefab: {fileID: 8569133449571643222}
   startForce: 15
+--- !u!58 &434385593369994332
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8569133449571643222}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.99
+--- !u!114 &6167760885837184440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8569133449571643222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72681a2d0404ee845bd8c97f663aec94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

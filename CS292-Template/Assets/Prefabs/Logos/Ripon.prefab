@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8754080918475291410}
   - component: {fileID: -1820590747750750066}
   - component: {fileID: -6168478405353346698}
+  - component: {fileID: 4686675268799499999}
+  - component: {fileID: 6030399079361320538}
   m_Layer: 0
   m_Name: Ripon
   m_TagString: Untagged
@@ -117,3 +119,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logoPrefab: {fileID: 9168533481610312034}
   startForce: 15
+--- !u!58 &4686675268799499999
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9168533481610312034}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
+--- !u!114 &6030399079361320538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9168533481610312034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72681a2d0404ee845bd8c97f663aec94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

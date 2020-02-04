@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 374268003059094220}
   - component: {fileID: -4956649253747084748}
   - component: {fileID: -1793115453447753347}
+  - component: {fileID: 2282659289559781631}
+  - component: {fileID: 8020914665343302760}
   m_Layer: 0
   m_Name: Grinell
   m_TagString: Untagged
@@ -117,3 +119,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logoPrefab: {fileID: 7463784479029067870}
   startForce: 15
+--- !u!58 &2282659289559781631
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7463784479029067870}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
+--- !u!114 &8020914665343302760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7463784479029067870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72681a2d0404ee845bd8c97f663aec94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

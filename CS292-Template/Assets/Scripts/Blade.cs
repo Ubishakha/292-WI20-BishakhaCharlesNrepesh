@@ -7,11 +7,15 @@ public class Blade : MonoBehaviour
     bool isCutting = false;
     Rigidbody2D rb;
     Camera c;
+    CircleCollider2D circleCol;
+    Vector2 previousPosition;
+    public float minVel = .001f;
 
     private void Start()
     {
         c = Camera.main;
         rb = GetComponent<Rigidbody2D>();
+        circleCol = GetComponent<CircleCollider2D>();
     }
     // Update is called once per frame
     void Update()
@@ -33,16 +37,31 @@ public class Blade : MonoBehaviour
 
     void UpdateCutting()
     {
-        rb.position = c.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 newPosition = c.ScreenToWorldPoint(Input.mousePosition);
+        rb.position = newPosition;
+
+        float velocity = (newPosition - previousPosition).magnitude * Time.deltaTime;
+        if (velocity > minVel)
+        {
+            circleCol.enabled = true;
+        }
+        else
+        {
+            circleCol.enabled = false;
+        }
+        previousPosition = newPosition;
     }
 
     void StartCutting()
     {
         isCutting = true;
+        previousPosition = c.ScreenToWorldPoint(Input.mousePosition);
+        circleCol.enabled = false;
     }
 
     void StopCutting()
     {
         isCutting = false;
+        circleCol.enabled = false;
     }
 }
