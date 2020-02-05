@@ -12,6 +12,7 @@ public class Blade : MonoBehaviour
     Vector2 previousPosition;
     public float minVel = .001f;
 
+    public GameObject gameOverPanel;
     public Text ScoreDisplay;
     public int score;
 
@@ -21,6 +22,7 @@ public class Blade : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         circleCol = GetComponent<CircleCollider2D>();
         ScoreDisplay.text = score.ToString();
+        //gameOverPanel.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -79,7 +81,9 @@ public class Blade : MonoBehaviour
         }
         else if (col.tag == "knox")
         {
-            Debug.Log("Game over");
+          OpenPanel(gameOverPanel);
+          Debug.Log("Game over");
+            
         }
         else if (col.tag == "mwc")
         {
@@ -90,7 +94,14 @@ public class Blade : MonoBehaviour
         {
             Debug.Log("idk");
         }
-        Debug.Log("hit");
         ScoreDisplay.text = score.ToString();
+    }
+
+    public void OpenPanel(GameObject Panel)
+    {
+        if(Panel != null)
+        {
+            Panel.SetActive(true);
+        }
     }
 }
