@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Blade : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class Blade : MonoBehaviour
     Vector2 previousPosition;
     public float minVel = .001f;
 
+    public Text ScoreDisplay;
+    public int score;
+
     private void Start()
     {
         c = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         circleCol = GetComponent<CircleCollider2D>();
+        ScoreDisplay.text = score.ToString();
     }
     // Update is called once per frame
     void Update()
@@ -63,5 +68,29 @@ public class Blade : MonoBehaviour
     {
         isCutting = false;
         circleCol.enabled = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "logo")
+        {
+            score++;
+            ScoreDisplay.text = score.ToString();
+        }
+        else if (col.tag == "knox")
+        {
+            Debug.Log("Game over");
+        }
+        else if (col.tag == "mwc")
+        {
+            score += 10;
+            ScoreDisplay.text = score.ToString();
+        }
+        else
+        {
+            Debug.Log("idk");
+        }
+        Debug.Log("hit");
+        ScoreDisplay.text = score.ToString();
     }
 }
