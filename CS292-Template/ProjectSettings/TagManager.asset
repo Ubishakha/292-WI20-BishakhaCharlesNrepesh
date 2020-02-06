@@ -8,6 +8,7 @@ TagManager:
   - logo
   - knox
   - mwc
+  - Resumebtn
   layers:
   - Default
   - TransparentFX
