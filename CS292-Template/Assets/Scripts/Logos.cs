@@ -15,5 +15,9 @@ public class Logos : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
+        if (col.tag == "ground")
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -12,6 +12,7 @@ public class Blade : MonoBehaviour
     Vector2 previousPosition;
     public float minVel = .001f;
 
+    public GameObject gameOverPanel;
     public Text ScoreDisplay;
     public int score;
 
@@ -79,6 +80,10 @@ public class Blade : MonoBehaviour
         }
         else if (col.tag == "knox")
         {
+            if (gameOverPanel != null)
+            {
+                gameOverPanel.SetActive(true);
+            }
             Debug.Log("Game over");
         }
         else if (col.tag == "mwc")
