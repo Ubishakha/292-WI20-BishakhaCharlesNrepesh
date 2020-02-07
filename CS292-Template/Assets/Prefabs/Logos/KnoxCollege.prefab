@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2553946344300577108}
   - component: {fileID: -9131870106827658618}
   - component: {fileID: 4241769580562974379}
-  - component: {fileID: 893180597881850302}
+  - component: {fileID: 4891364753208999953}
   m_Layer: 0
   m_Name: KnoxCollege
   m_TagString: knox
@@ -135,7 +135,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
---- !u!114 &893180597881850302
+--- !u!114 &4891364753208999953
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,10 +144,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082015724399733041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72681a2d0404ee845bd8c97f663aec94, type: 3}
+  m_Script: {fileID: 11500000, guid: b444bdaba4c153148bd7383e927a6fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreDisplay: {fileID: 0}
   explosion: {fileID: 5326448879294516291, guid: 565b7591403fd3e448b8c1b54de9a88e,
     type: 3}
-  score: 0
