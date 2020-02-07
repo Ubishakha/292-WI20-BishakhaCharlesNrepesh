@@ -676,8 +676,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1942479105
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e4c69b70e8c56ed44aaa5bb3a5d8a736, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1033,9 +1033,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: -1942479105
+  m_SortingLayer: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: bdccf11ca1a90364ea12e59883bd12c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1534,8 +1534,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1942479105
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 07798e8ded69a1341bd277b8d020ad0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1871,8 +1871,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1942479105
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1d23a79110699f34eb82693ee5458809, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3107,6 +3107,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitButton
       objectReference: {fileID: 0}
+    - target: {fileID: 5199544661769833353, guid: 1a84e651774e54e47bb727cd3be6f57d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199544661769833353, guid: 1a84e651774e54e47bb727cd3be6f57d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199544661769833353, guid: 1a84e651774e54e47bb727cd3be6f57d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199544661769833353, guid: 1a84e651774e54e47bb727cd3be6f57d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2542111406680539406}
+    - target: {fileID: 5199544661769833353, guid: 1a84e651774e54e47bb727cd3be6f57d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayerQuit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199544661769833353, guid: 1a84e651774e54e47bb727cd3be6f57d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8888453724767060050, guid: 1a84e651774e54e47bb727cd3be6f57d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3214,6 +3244,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a84e651774e54e47bb727cd3be6f57d, type: 3}
+--- !u!114 &2542111406680539406 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1566343228973815225, guid: 1a84e651774e54e47bb727cd3be6f57d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2542111406680539405}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9172cfc846c6c48892f9f7d670ca13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3696173558945845871
 PrefabInstance:
   m_ObjectHideFlags: 0
