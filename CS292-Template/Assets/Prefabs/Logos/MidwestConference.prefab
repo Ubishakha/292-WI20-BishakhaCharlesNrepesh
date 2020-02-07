@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4847338208053667115}
   - component: {fileID: 6487196582953023352}
   - component: {fileID: 34489688842695377}
-  - component: {fileID: 9033565980353287593}
+  - component: {fileID: 2627785692827753043}
   m_Layer: 0
   m_Name: MidwestConference
   m_TagString: mwc
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logoPrefab: {fileID: 0}
   startForce: 15
---- !u!114 &9033565980353287593
+--- !u!114 &2627785692827753043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,10 +144,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7764772577507212604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72681a2d0404ee845bd8c97f663aec94, type: 3}
+  m_Script: {fileID: 11500000, guid: b444bdaba4c153148bd7383e927a6fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreDisplay: {fileID: 0}
   explosion: {fileID: 7565560915932238857, guid: 6a84db5b64f1422489ae5dd0f37093bb,
     type: 3}
-  score: 0
