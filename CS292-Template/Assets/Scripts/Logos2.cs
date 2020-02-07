@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Logos : MonoBehaviour
+public class Logos2 : MonoBehaviour
 {
     public GameObject explosion;
 
@@ -14,10 +14,6 @@ public class Logos : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        if (col.tag == "ground")
-        {           
-            Destroy(gameObject);
-            LivesControl.health -= 1;
-        }
+        Destroy(gameObject,2f);
     }
 }
