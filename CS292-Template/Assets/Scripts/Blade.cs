@@ -13,6 +13,7 @@ public class Blade : MonoBehaviour
     public float minVel = .001f;
 
     public GameObject gameOverPanel;
+    public GameObject gamePanel;
     public Text ScoreDisplay;
     public int score;
 
@@ -83,6 +84,11 @@ public class Blade : MonoBehaviour
             if (gameOverPanel != null)
             {
                 gameOverPanel.SetActive(true);
+
+            }
+            if (gameOverPanel != null && gamePanel.activeSelf == true)
+            {                
+                gamePanel.SetActive(false);
             }
         }
         else if (col.tag == "mwc")

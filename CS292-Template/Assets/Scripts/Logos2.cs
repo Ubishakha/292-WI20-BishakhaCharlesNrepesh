@@ -14,6 +14,6 @@ public class Logos2 : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        Destroy(gameObject,1f);
+        Destroy(gameObject,2f);
     }
 }

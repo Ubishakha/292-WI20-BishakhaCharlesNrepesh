@@ -5,7 +5,7 @@ using UnityEngine;
 public class LivesControl : MonoBehaviour
 {
 
-    public GameObject Flame1, Flame2, Flame3, Flame4, GameOverPanel;
+    public GameObject Flame1, Flame2, Flame3, Flame4, GameOverPanel,GamePanel;
     public static int health; 
 
     // Start is called before the first frame update
@@ -55,6 +55,7 @@ public class LivesControl : MonoBehaviour
                 Flame2.gameObject.SetActive(false);
                 Flame3.gameObject.SetActive(false);
                 Flame4.gameObject.SetActive(false);
+                GamePanel.gameObject.SetActive(false);
                 GameOverPanel.gameObject.SetActive(true);
                 Time.timeScale = 0;
                 break;
