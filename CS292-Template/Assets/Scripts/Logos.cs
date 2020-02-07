@@ -7,7 +7,6 @@ public class Logos : MonoBehaviour
 {
     public GameObject explosion;
 
-
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Blade")
@@ -15,9 +14,14 @@ public class Logos : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        if (col.tag == "ground")
+        if (col.tag == "knox")
         {
+            ;
+        }
+        else if (col.tag == "ground")
+        {           
             Destroy(gameObject);
+            LivesControl.health -= 1;
         }
     }
 }
