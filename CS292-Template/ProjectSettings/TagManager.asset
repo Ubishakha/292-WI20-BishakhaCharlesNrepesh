@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Blade
+  - logo
+  - mwc
+  - Resumebtn
+  - ground
   layers:
   - Default
   - TransparentFX
@@ -13,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Above UI
+  - Blade
   - 
   - 
   - 
@@ -40,4 +45,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3872546833
+    locked: 0
+  - name: UI
+    uniqueID: 2629418651
+    locked: 0
+  - name: Above UI
+    uniqueID: 2352488191
+    locked: 0
+  - name: Blade
+    uniqueID: 2273524821
     locked: 0
