@@ -17,6 +17,7 @@ public class Blade : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject gamePanel;
     public Text ScoreDisplay;
+    public Text HighScoreDisplay;
     public int score;
     public AudioSource[] sounds;
     public AudioSource slice;
@@ -31,6 +32,7 @@ public class Blade : MonoBehaviour
         sounds = GetComponents<AudioSource>();
         slice = sounds[0];
         bonus = sounds[1];
+        HighScoreDisplay.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
     }
     // Update is called once per frame
     void Update()
@@ -87,8 +89,7 @@ public class Blade : MonoBehaviour
     {
         if (col.tag == "logo")
         {
-            score++;
-            ScoreDisplay.text = score.ToString();
+            score++;          
         }
         else if (col.tag == "knox")
         {
@@ -102,16 +103,15 @@ public class Blade : MonoBehaviour
                 gamePanel.SetActive(false);
             }
         }
-        else if (col.tag == "mwc")
-        {
-            score += 10;
-            ScoreDisplay.text = score.ToString(); 
-            bonus.Play();
-        }
         else
         {
-            ;
+            score += 10;
         }      
         ScoreDisplay.text = score.ToString();
+        if (score > PlayerPrefs.GetInt("Highscore", 0))
+        {
+            PlayerPrefs.SetInt("Highscore", score);
+        }
+        
     }
 }
