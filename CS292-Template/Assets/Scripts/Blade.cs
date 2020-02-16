@@ -11,6 +11,8 @@ public class Blade : MonoBehaviour
     CircleCollider2D circleCol;
     Vector2 previousPosition;
     public float minVel = .001f;
+    public GameObject bladeTrailPrefab;
+    GameObject currBladeTrail;
 
     public GameObject gameOverPanel;
     public GameObject gamePanel;
@@ -62,6 +64,7 @@ public class Blade : MonoBehaviour
     void StartCutting()
     {
         isCutting = true;
+        currBladeTrail = Instantiate(bladeTrailPrefab, transform);
         previousPosition = c.ScreenToWorldPoint(Input.mousePosition);
         circleCol.enabled = false;
     }
@@ -69,6 +72,8 @@ public class Blade : MonoBehaviour
     void StopCutting()
     {
         isCutting = false;
+        currBladeTrail.transform.SetParent(null);
+        Destroy(currBladeTrail, 0f);
         circleCol.enabled = false;
     }
 
