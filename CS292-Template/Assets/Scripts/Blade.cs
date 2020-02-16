@@ -18,6 +18,9 @@ public class Blade : MonoBehaviour
     public GameObject gamePanel;
     public Text ScoreDisplay;
     public int score;
+    public AudioSource[] sounds;
+    public AudioSource slice;
+    public AudioSource bonus;
 
     private void Start()
     {
@@ -25,6 +28,9 @@ public class Blade : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         circleCol = GetComponent<CircleCollider2D>();
         ScoreDisplay.text = score.ToString();
+        sounds = GetComponents<AudioSource>();
+        slice = sounds[0];
+        bonus = sounds[1];
     }
     // Update is called once per frame
     void Update()
@@ -99,7 +105,8 @@ public class Blade : MonoBehaviour
         else if (col.tag == "mwc")
         {
             score += 10;
-            ScoreDisplay.text = score.ToString();
+            ScoreDisplay.text = score.ToString(); 
+            bonus.Play();
         }
         else
         {
