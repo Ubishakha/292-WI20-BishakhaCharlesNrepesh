@@ -110,7 +110,7 @@ public class Blade : MonoBehaviour
         {
             score += 10;
             ScoreDisplay.text = score.ToString(); 
-            cheer.Play();
+            bonus.Play();
             slice.Play();
         }
         else
