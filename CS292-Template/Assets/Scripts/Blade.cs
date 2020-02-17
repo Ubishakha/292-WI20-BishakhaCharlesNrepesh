@@ -21,6 +21,7 @@ public class Blade : MonoBehaviour
     public AudioSource[] sounds;
     public AudioSource slice;
     public AudioSource bonus;
+    public AudioSource cheer;
 
     private void Start()
     {
@@ -29,8 +30,9 @@ public class Blade : MonoBehaviour
         circleCol = GetComponent<CircleCollider2D>();
         ScoreDisplay.text = score.ToString();
         sounds = GetComponents<AudioSource>();
-        slice = sounds[0];
-        bonus = sounds[1];
+        cheer = sounds[0];
+        slice = sounds[1];
+        bonus = sounds[2];
     }
     // Update is called once per frame
     void Update()
@@ -108,7 +110,7 @@ public class Blade : MonoBehaviour
         {
             score += 10;
             ScoreDisplay.text = score.ToString(); 
-            bonus.Play();
+            cheer.Play();
             slice.Play();
         }
         else
