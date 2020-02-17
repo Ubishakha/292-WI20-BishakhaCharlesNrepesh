@@ -50,6 +50,10 @@ public class Blade : MonoBehaviour
         {
             UpdateCutting();
         }
+        if (PlayerPrefs.GetInt("Highscore", 0) == 0)
+        {
+            HighScoreDisplay.text = "0";
+        }
     }
 
     void UpdateCutting()

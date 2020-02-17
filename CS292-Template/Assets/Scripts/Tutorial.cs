@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HighScore : MonoBehaviour
+public class Tutorial : MonoBehaviour
 {
     public GameObject tutorialPanel;
-    public GameObject titlePanel;
-    public Text highScoreText;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    public void tutorial()
     {   
   
     // Update is called once per frame
@@ -19,14 +16,12 @@ public class HighScore : MonoBehaviour
             if (tutorialPanel != null)
             {
                 tutorialPanel.SetActive(true);
-
             }
-            /*
-            if (tutorialPanel != null && titlePanel.activeSelf == true)
-            {
-                titlePanel.SetActive(false);
-            }
-            */
         }
+    }
+
+    public void Reset()
+    {
+        PlayerPrefs.DeleteKey("Highscore");
     }
 }
