@@ -22,6 +22,7 @@ public class Blade : MonoBehaviour
     public AudioSource[] sounds;
     public AudioSource slice;
     public AudioSource bonus;
+    public AudioSource cheer;
 
     private void Start()
     {
@@ -30,8 +31,9 @@ public class Blade : MonoBehaviour
         circleCol = GetComponent<CircleCollider2D>();
         ScoreDisplay.text = score.ToString();
         sounds = GetComponents<AudioSource>();
-        slice = sounds[0];
-        bonus = sounds[1];
+        cheer = sounds[0];
+        slice = sounds[1];
+        bonus = sounds[2];
         HighScoreDisplay.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
     }
     // Update is called once per frame
@@ -93,7 +95,9 @@ public class Blade : MonoBehaviour
     {
         if (col.tag == "logo")
         {
-            score++;          
+            score++;
+            ScoreDisplay.text = score.ToString();
+            slice.Play();
         }
         else if (col.tag == "knox")
         {
@@ -110,7 +114,11 @@ public class Blade : MonoBehaviour
         else
         {
             score += 10;
-        }      
+            ScoreDisplay.text = score.ToString(); 
+            cheer.Play();
+            slice.Play();
+        }
+    
         ScoreDisplay.text = score.ToString();
         if (score > PlayerPrefs.GetInt("Highscore", 0))
         {

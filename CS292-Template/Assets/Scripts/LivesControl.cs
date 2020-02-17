@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class LivesControl : MonoBehaviour
 {
-
     public GameObject GameOverPanel,GamePanel;
     public static int health; 
     public Image Flame1, Flame2, Flame3, Flame4;
