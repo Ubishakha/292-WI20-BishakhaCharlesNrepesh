@@ -118,10 +118,7 @@ public class Blade : MonoBehaviour
             cheer.Play();
             slice.Play();
         }
-        else
-        {
-            ;
-        }      
+    
         ScoreDisplay.text = score.ToString();
         if (score > PlayerPrefs.GetInt("Highscore", 0))
         {
