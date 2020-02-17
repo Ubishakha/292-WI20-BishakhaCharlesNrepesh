@@ -48,6 +48,7 @@ public class Blade : MonoBehaviour
         {
             UpdateCutting();
         }
+        
     }
 
     void UpdateCutting()
@@ -89,6 +90,7 @@ public class Blade : MonoBehaviour
         {
             score++;
             ScoreDisplay.text = score.ToString();
+            slice.Play();
         }
         else if (col.tag == "knox")
         {
@@ -107,6 +109,7 @@ public class Blade : MonoBehaviour
             score += 10;
             ScoreDisplay.text = score.ToString(); 
             bonus.Play();
+            slice.Play();
         }
         else
         {
