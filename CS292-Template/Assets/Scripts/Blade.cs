@@ -114,4 +114,9 @@ public class Blade : MonoBehaviour
         }
         
     }
+
+    public int getScore()
+    {
+        return score;
+    }
 }
