@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4812621468616860530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4812621468616860531}
+  - component: {fileID: 4812621468616860528}
+  m_Layer: 5
+  m_Name: LogoSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4812621468616860531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812621468616860530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4812621468616860528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812621468616860530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e63f872732e464bbaf3f37a863531c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logos:
+  - {fileID: 2688245310275405005, guid: b51ec5f4046c2f642aad8bd4741cba21, type: 3}
+  - {fileID: 7702220644594078135, guid: 2223d8a7a7406844897eaa81a7abf92b, type: 3}
+  - {fileID: 8268055928400242194, guid: c32d9aa5e94d5ff45a714e67d608a37f, type: 3}
+  - {fileID: 7463784479029067870, guid: 22f84ddc10e81b64b9fdb4b53ac54a60, type: 3}
+  - {fileID: 5912874425705044872, guid: 25325d8c79d6d1f43add80d7144b96e7, type: 3}
+  - {fileID: 8569133449571643222, guid: 384990017952f894a9ec2395d2542a4c, type: 3}
+  - {fileID: 9191717672128562730, guid: 9312be6445030634f94eba3bcfbe2f8c, type: 3}
+  - {fileID: 1231187900544039791, guid: b0e8b824075759b4999241353878eea9, type: 3}
+  - {fileID: 9168533481610312034, guid: 58e05e894955517489bf263500fba171, type: 3}
+  - {fileID: 2082015724399733041, guid: 8b3598b13cfb8a348a7ecb213dc8dcb6, type: 3}
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  minDelay: 0.1
+  maxDelay: 0.5
+  DelayRate: 0.5
+  timeIncrease: 15

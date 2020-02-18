@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Replay : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject currGamePanel;
+    public GameObject nextGamePanel;
+    public void ReplayGame()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(currGamePanel);
+        Instantiate(nextGamePanel);
     }
 }
