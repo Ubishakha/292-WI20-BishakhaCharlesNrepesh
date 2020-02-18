@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Replay : MonoBehaviour
 {
-    public GameObject currGamePanel;
-    public GameObject nextGamePanel;
-    public void ReplayGame()
+    public GameObject gamepanel;
+    public GameObject titlepanel;
+
+    public void Start()
     {
-        Destroy(currGamePanel);
-        Instantiate(nextGamePanel);
+        if (PlayerPrefs.GetInt("restart") == 1)
+        {
+            gamepanel.SetActive(true);
+            titlepanel.SetActive(false);
+            PlayerPrefs.SetInt("restart", 0);
+        }
+        
     }
 }

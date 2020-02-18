@@ -86,7 +86,6 @@ GameObject:
   - component: {fileID: 8291967443103682405}
   - component: {fileID: 1983272927064447457}
   - component: {fileID: 4775768351789709449}
-  - component: {fileID: 202561220897270879}
   m_Layer: 5
   m_Name: ReplayButton
   m_TagString: Untagged
@@ -193,18 +192,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &202561220897270879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3879602685891895244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9172cfc846c6c48892f9f7d670ca13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6347424139711644555
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c31ff064865f4438ae459f5936898d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamepanel: {fileID: 0}
+  titlepanel: {fileID: 0}
 --- !u!1 &8028203700359330886
 GameObject:
   m_ObjectHideFlags: 0
