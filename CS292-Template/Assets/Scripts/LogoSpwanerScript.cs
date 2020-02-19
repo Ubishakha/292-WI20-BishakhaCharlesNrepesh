@@ -34,10 +34,10 @@ public class LogoSpwanerScript : MonoBehaviour
                 Instantiate(randomLogo, spawnPoint.position, spawnPoint.rotation); 
             }
             //should the spawn rate increase?
-            if( spawnRateCountDown < 0 && DelayRate > 1 )
+            if( spawnRateCountDown < 0 && DelayRate > 0.5 )
              {
                  spawnRateCountDown += timeIncrease;
-                 DelayRate -= 0.5f;
+                 DelayRate -= 0.1f;
              }
  
         }   
