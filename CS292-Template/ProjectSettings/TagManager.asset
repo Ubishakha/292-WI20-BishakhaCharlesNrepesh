@@ -9,6 +9,8 @@ TagManager:
   - mwc
   - Resumebtn
   - ground
+  - knox
+  - Groundtrigger
   layers:
   - Default
   - TransparentFX
