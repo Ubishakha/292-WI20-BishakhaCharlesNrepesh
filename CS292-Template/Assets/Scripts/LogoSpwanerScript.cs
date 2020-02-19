@@ -24,20 +24,20 @@ public class LogoSpwanerScript : MonoBehaviour
             yield return null;
             spawnRateCountDown -= Time.deltaTime;
             spawnCountDown     -= Time.deltaTime;
-
+            // should a new logo be spawned?
             if (spawnCountDown < 0){
                 spawnCountDown += DelayRate;
                 int spawnIndex = Random.Range(0, spawnPoints.Length);
                 Transform spawnPoint = spawnPoints[spawnIndex];
-                
+                // get a random logo from the list 
                 GameObject randomLogo = logos[Random.Range(0, logos.Length)];
                 Instantiate(randomLogo, spawnPoint.position, spawnPoint.rotation); 
             }
-
-            if( spawnRateCountDown < 0 && DelayRate > 0.1 )
+            //should the spawn rate increase?
+            if( spawnRateCountDown < 0 && DelayRate > 1 )
              {
                  spawnRateCountDown += timeIncrease;
-                 DelayRate -= 0.1f;
+                 DelayRate -= 0.5f;
              }
  
         }   
