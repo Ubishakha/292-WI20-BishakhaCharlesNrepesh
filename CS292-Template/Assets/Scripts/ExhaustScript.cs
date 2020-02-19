@@ -10,6 +10,12 @@ public class ExhaustScript : MonoBehaviour
     public bool ranbool2 = true;
     public bool ranbool3 = true;
     public bool ranbool4 = true;
+    private RipplePostProcessor camRipple;
+
+    private void Start()
+    {
+        camRipple = Camera.main.GetComponent<RipplePostProcessor>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,6 +25,8 @@ public class ExhaustScript : MonoBehaviour
             if (ranbool2)
             {
                 Instantiate(exhaust, transform.position, Quaternion.identity);
+                camRipple.RippleEffect();
+                Handheld.Vibrate();
                 ranbool2 = false;
             }
         }
@@ -27,6 +35,8 @@ public class ExhaustScript : MonoBehaviour
             if (ranbool3)
             {
                 Instantiate(exhaust, transform.position, Quaternion.identity);
+                camRipple.RippleEffect();
+                Handheld.Vibrate();
                 ranbool3 = false;
             }
         }
@@ -35,6 +45,8 @@ public class ExhaustScript : MonoBehaviour
             if (ranbool4)
             {
                 Instantiate(exhaust, transform.position, Quaternion.identity);
+                camRipple.RippleEffect();
+                Handheld.Vibrate();
                 ranbool4 = false;
             }
         }
