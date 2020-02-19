@@ -133,8 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b84259ff0d0b494e845587a81c20bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logoPrefab: {fileID: 0}
+  logoPrefab: {fileID: 7764772577507212604}
   startForce: 10
+  hitTrigger: {fileID: 0}
 --- !u!114 &2627785692827753043
 MonoBehaviour:
   m_ObjectHideFlags: 0
