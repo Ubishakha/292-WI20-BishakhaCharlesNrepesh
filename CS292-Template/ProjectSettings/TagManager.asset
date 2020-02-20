@@ -11,6 +11,8 @@ TagManager:
   - ground
   - knox
   - Groundtrigger
+  - Canvas
+  - slider
   layers:
   - Default
   - TransparentFX

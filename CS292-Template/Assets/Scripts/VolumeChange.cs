@@ -1,24 +1,27 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class VolumeChange : MonoBehaviour
 {
     //Reference to component 
     private AudioSource audioSrc;
-
     //Starting value
     private float musicVolume = 1f;
+    public Slider slider;
+
 
     private void Start()
     {
-        //Assign audio source
-        audioSrc = GetComponent<AudioSource>();        
+        audioSrc = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        //Audio source equal to music Volume
-        audioSrc.volume = musicVolume;
+    audioSrc.volume = slider.value;
+    PlayerPrefs.SetFloat("slider", slider.value);
+
     }
+        
 
     //This takes value passed by slider
     public void SetVolume(float vol)
@@ -26,4 +29,14 @@ public class VolumeChange : MonoBehaviour
         musicVolume = vol;
     }
 
+    public float getVolume()
+    {
+        return musicVolume;
+    }
+
+    public AudioSource getAudioSRC()
+    {
+        return audioSrc;
+    }
+    
 }
