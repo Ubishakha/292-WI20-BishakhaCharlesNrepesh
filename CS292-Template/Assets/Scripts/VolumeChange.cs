@@ -11,20 +11,30 @@ public class VolumeChange : MonoBehaviour
     public Slider sliderSFX;
 
     Blade blade;
-    //Ground ground;
+    public GameObject ground;
+    public GameObject groundL;
+    public GameObject groundR;
     public GameObject gameOverPanel;
 
     AudioSource[] sounds;
-    //AudioSource groundSound;
+    AudioSource groundSound;
+    AudioSource groundSoundL;
+    AudioSource groundSoundR;
+
     AudioSource gameOverSound;
     private void Start()
     {
         blade = GameObject.FindGameObjectWithTag("Blade").GetComponent<Blade>();
         //ground = GameObject.FindGameObjectWithTag("ground").GetComponent<Ground>();
+        //groundL = GameObject.FindGameObjectWithTag("ground").GetComponent<GroundLeft>();
+        //groundR = GameObject.FindGameObjectWithTag("ground").GetComponent<GroundRight>();
+
         //gameOverPanel = GameObject.FindGameObjectWithTag("gameover").GetComponent<Panel_GameOver>();
         audioSrc = GetComponent<AudioSource>();
         sounds = blade.GetComponents<AudioSource>();
-       // groundSound = ground.GetComponent<AudioSource>();
+        groundSound = ground.GetComponent<AudioSource>();
+        groundSoundL = groundL.GetComponent<AudioSource>();
+        groundSoundR = groundR.GetComponent<AudioSource>();
         gameOverSound = gameOverPanel.GetComponent<AudioSource>();
     }
 
@@ -34,9 +44,10 @@ public class VolumeChange : MonoBehaviour
         sounds[0].volume = sliderSFX.value;
         sounds[1].volume = sliderSFX.value;
         sounds[2].volume = sliderSFX.value;
-        //groundSound.volume = sliderSFX.value;
+        groundSound.volume = sliderSFX.value;
+        groundSoundL.volume = sliderSFX.value;
+        groundSoundR.volume = sliderSFX.value;
         gameOverSound.volume = sliderSFX.value;
-
         PlayerPrefs.SetFloat("slider", slider.value);
         PlayerPrefs.SetFloat("sliderSFX", sliderSFX.value);
     }

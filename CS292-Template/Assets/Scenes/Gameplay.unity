@@ -2370,6 +2370,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 1837935277}
   sliderSFX: {fileID: 1160653498}
+  ground: {fileID: 1312609619}
+  groundL: {fileID: 1030374188}
+  groundR: {fileID: 1445893816}
   gameOverPanel: {fileID: 6642366914574632230}
 --- !u!114 &1477385774
 MonoBehaviour:
@@ -2809,7 +2812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11279823, y: 0.30116215}
   m_AnchorMax: {x: 0.28880045, y: 0.6704189}
-  m_AnchoredPosition: {x: -318.69894, y: -29.299992}
+  m_AnchoredPosition: {x: -318.69894, y: -29.299994}
   m_SizeDelta: {x: 26.77, y: 22.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871228306
@@ -2986,7 +2989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11279823, y: 0.30116215}
   m_AnchorMax: {x: 0.28880045, y: 0.6704189}
-  m_AnchoredPosition: {x: -317.329, y: -29.3}
+  m_AnchoredPosition: {x: -317.329, y: -29.300001}
   m_SizeDelta: {x: 24.02, y: 22.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067083185
