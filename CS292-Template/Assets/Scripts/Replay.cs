@@ -11,10 +11,12 @@ public class Replay : MonoBehaviour
     private AudioSource audioController;
 
     public Slider slider;
+    public Slider sliderSFX;
 
     public void Start()
     {
         slider.value = PlayerPrefs.GetFloat("slider");
+        sliderSFX.value = PlayerPrefs.GetFloat("sliderSFX");
         if (PlayerPrefs.GetInt("restart") == 1)
         {
 
