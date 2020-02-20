@@ -31,7 +31,7 @@ RectTransform:
   m_Children:
   - {fileID: 4132664708783928594}
   - {fileID: 850147094901128083}
-  - {fileID: 4177831011423059593}
+  - {fileID: 3348865867016223373}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &7525718639288526285
+--- !u!1001 &9219877593929605577
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -423,23 +423,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LogoSpawnerSides
       objectReference: {fileID: 0}
-    - target: {fileID: 5875537327550323527, guid: 185b71e0c16561c47bed1491120d1753,
-        type: 3}
-      propertyPath: spawnpointSides.Array.data[0]
-      value: 
-      objectReference: {fileID: 1665894902956792572, guid: eb606ffded5d70b46b123ffc52e67d02,
-        type: 3}
-    - target: {fileID: 5875537327550323527, guid: 185b71e0c16561c47bed1491120d1753,
-        type: 3}
-      propertyPath: spawnpointSides.Array.data[1]
-      value: 
-      objectReference: {fileID: 4276469018023139533, guid: a6858ac4403ab9a45b973e2ddf76d52f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 185b71e0c16561c47bed1491120d1753, type: 3}
---- !u!4 &4177831011423059593 stripped
+--- !u!4 &3348865867016223373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5875537327550323524, guid: 185b71e0c16561c47bed1491120d1753,
     type: 3}
-  m_PrefabInstance: {fileID: 7525718639288526285}
+  m_PrefabInstance: {fileID: 9219877593929605577}
   m_PrefabAsset: {fileID: 0}
