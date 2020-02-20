@@ -119,8 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logoPrefab: {fileID: 7463784479029067870}
-  startForce: 15
-  hitTrigger: {fileID: 0}
+  startForce: 13
 --- !u!58 &2282659289559781631
 CircleCollider2D:
   m_ObjectHideFlags: 0
