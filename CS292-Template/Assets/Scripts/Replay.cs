@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Replay : MonoBehaviour
 {
     public GameObject gamepanel;
     public GameObject titlepanel;
-    //Canvas volumeControl;
-    public AudioSource audioController;
+    private AudioSource audioController;
+
+    public Slider slider;
+
     public void Start()
     {
-        audioController = GetComponent<AudioSource>();
-        //volumeControl = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
-        audioController.volume = PlayerPrefs.GetFloat("volume");
+        slider.value = PlayerPrefs.GetFloat("slider");
         if (PlayerPrefs.GetInt("restart") == 1)
         {
 
@@ -20,6 +22,5 @@ public class Replay : MonoBehaviour
             titlepanel.SetActive(false);
             PlayerPrefs.SetInt("restart", 0);
         }
-        
     }
 }

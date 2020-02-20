@@ -5,11 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RestartScript : MonoBehaviour
 {
-    //Canvas volumeControl;
-    void Start()
-    {
-        //volumeControl = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
-    }
+
     public void RestartGame()
     {
         //store volume
