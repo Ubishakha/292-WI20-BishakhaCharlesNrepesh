@@ -11,6 +11,7 @@ TagManager:
   - ground
   - knox
   - Groundtrigger
+  - Canvas
   layers:
   - Default
   - TransparentFX

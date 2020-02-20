@@ -3,10 +3,10 @@
 public class VolumeChange : MonoBehaviour
 {
     //Reference to component 
-    private AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     //Starting value
-    private float musicVolume = 1f;
+    public float musicVolume = 1f;
 
     private void Start()
     {
@@ -18,6 +18,7 @@ public class VolumeChange : MonoBehaviour
     {
         //Audio source equal to music Volume
         audioSrc.volume = musicVolume;
+        PlayerPrefs.SetFloat("volume", audioSrc.volume);
     }
 
     //This takes value passed by slider
@@ -25,5 +26,10 @@ public class VolumeChange : MonoBehaviour
     {
         musicVolume = vol;
     }
-
+    /*
+    public float getVolume()
+    {
+        return musicVolume;
+    }
+    */
 }
