@@ -15,7 +15,7 @@ public class Logos : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        hitTrigger = GetComponent<AudioSource>();
+        hitTrigger = GameObject.FindGameObjectWithTag("ground").GetComponent<AudioSource>();
         if (col.tag == "ground")
         {           
             hitTrigger.Play();
