@@ -101,15 +101,7 @@ public class Blade : MonoBehaviour
         }
         else if (col.tag == "knox")
         {
-            if (gameOverPanel != null)
-            {
-                gameOverPanel.SetActive(true);
-
-            }
-            if (gameOverPanel != null && gamePanel.activeSelf == true)
-            {                
-                gamePanel.SetActive(false);
-            }
+            ;
         }
         else
         {
