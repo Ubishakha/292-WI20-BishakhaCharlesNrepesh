@@ -2895,7 +2895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11279823, y: 0.30116215}
   m_AnchorMax: {x: 0.28880045, y: 0.6704189}
-  m_AnchoredPosition: {x: -318.6989, y: -29.3}
+  m_AnchoredPosition: {x: -318.6989, y: -29.300001}
   m_SizeDelta: {x: 26.77, y: 22.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871228306
@@ -3072,7 +3072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11279823, y: 0.30116215}
   m_AnchorMax: {x: 0.28880045, y: 0.6704189}
-  m_AnchoredPosition: {x: -317.32898, y: -29.300007}
+  m_AnchoredPosition: {x: -317.32898, y: -29.300009}
   m_SizeDelta: {x: 24.02, y: 22.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067083185
@@ -4842,22 +4842,27 @@ PrefabInstance:
     - target: {fileID: 1838269540176395487, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.1000061
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1838269540176395487, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.5999756
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043272858216391426, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2165303283847185107, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.35003662
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2165303283847185107, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.024993896
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 3169347963441876295, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
@@ -4938,6 +4943,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534251170501747787, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4649363432835813048, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4649363432835813048, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829288104527876852, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
+        type: 3}
+      propertyPath: m_Text
+      value: You will lose a life if you hit the Knox Logo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829288104527876852, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424644331861312808, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6890321920097992267, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
@@ -5052,7 +5087,7 @@ PrefabInstance:
     - target: {fileID: 6890321920097992268, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8319325558873507406, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
