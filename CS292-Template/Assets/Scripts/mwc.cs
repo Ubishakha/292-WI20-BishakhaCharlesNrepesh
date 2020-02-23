@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mwc : MonoBehaviour
 {
-    public GameObject mwcLogo;    
+    public GameObject[] twoLogos;    
 
     public Transform[] spawnpointSides;
 
@@ -20,11 +20,12 @@ public class mwc : MonoBehaviour
         while (true){
             float Delay = Random.Range(minDelay, maxDelay);
             yield return new WaitForSeconds(Delay);
-    
+
+            GameObject randomLogo = twoLogos[Random.Range(0, twoLogos.Length)];
             int spawnIndex2 = Random.Range(0, spawnpointSides.Length);
             Transform spawnPoint2 = spawnpointSides[spawnIndex2];
             
-            Instantiate(mwcLogo, spawnPoint2.position, spawnPoint2.rotation);
+            Instantiate(randomLogo, spawnPoint2.position, spawnPoint2.rotation);
         }   
     }
 }
