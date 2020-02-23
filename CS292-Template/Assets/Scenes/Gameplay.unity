@@ -652,8 +652,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 6.0999756, y: 0}
+  m_SizeDelta: {x: 218.90002, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430951703
 MonoBehaviour:
@@ -2457,6 +2457,7 @@ MonoBehaviour:
   groundL: {fileID: 1030374188}
   groundR: {fileID: 1445893816}
   gameOverPanel: {fileID: 6642366914574632230}
+  gameScreenPanel: {fileID: 392139414}
 --- !u!114 &1477385774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,7 +2602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20573759, y: 0.28500003}
   m_AnchorMax: {x: 0.80673766, y: 0.5413655}
-  m_AnchoredPosition: {x: 247.5, y: 223.77011}
+  m_AnchoredPosition: {x: 247.5, y: 223.77013}
   m_SizeDelta: {x: -400.2, y: -73.705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533819426
@@ -5087,7 +5088,7 @@ PrefabInstance:
     - target: {fileID: 6890321920097992268, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8319325558873507406, guid: 779c2a001c45b294d9cdc7c0b0ea355c,
         type: 3}
@@ -7175,6 +7176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -38.950012
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471633581426838371, guid: 1a4a06e6e35ffb044a66c49319d7da92,
+        type: 3}
+      propertyPath: m_Text
+      value: Background Music
       objectReference: {fileID: 0}
     - target: {fileID: 4557245179659905353, guid: 1a4a06e6e35ffb044a66c49319d7da92,
         type: 3}

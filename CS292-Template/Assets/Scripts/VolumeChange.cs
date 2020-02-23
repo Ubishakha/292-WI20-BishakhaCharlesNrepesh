@@ -15,6 +15,7 @@ public class VolumeChange : MonoBehaviour
     public GameObject groundL;
     public GameObject groundR;
     public GameObject gameOverPanel;
+    public GameObject gameScreenPanel;
 
     AudioSource[] sounds;
     AudioSource groundSound;
@@ -40,6 +41,10 @@ public class VolumeChange : MonoBehaviour
 
     private void Update()
     {
+        // if (gameScreenPanel.activeSelf == true) {
+        //     audioSrc.volume = audioSrc.volume / 2;
+        // }
+        // else{
         audioSrc.volume = slider.value;
         sounds[0].volume = sliderSFX.value;
         sounds[1].volume = sliderSFX.value;
@@ -50,6 +55,7 @@ public class VolumeChange : MonoBehaviour
         gameOverSound.volume = sliderSFX.value;
         PlayerPrefs.SetFloat("slider", slider.value);
         PlayerPrefs.SetFloat("sliderSFX", sliderSFX.value);
+        // }
     }
         
 
