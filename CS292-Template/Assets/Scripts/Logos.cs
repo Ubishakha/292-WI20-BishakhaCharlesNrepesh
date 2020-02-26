@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Logos : MonoBehaviour
 {
     public GameObject explosion;
-
+    public AudioSource hitTrigger;
+    
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Blade")
@@ -14,10 +15,13 @@ public class Logos : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
+        hitTrigger = GameObject.FindGameObjectWithTag("ground").GetComponent<AudioSource>();
         if (col.tag == "ground")
         {           
-            Destroy(gameObject);
+            hitTrigger.Play();
+            Destroy(gameObject, 2f);
             LivesControl.health -= 1;
+            
         }
     }
 }

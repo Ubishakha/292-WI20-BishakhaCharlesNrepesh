@@ -5,23 +5,41 @@ using UnityEngine;
 public class LogoSpwanerScript : MonoBehaviour
 {
     public GameObject[] logos;
+    // public GameObject mwc;
     public Transform[] spawnPoints;
-    public float minDelay = 0.1f;
-    public float maxDelay = 1f;
-    // Start is called before the first frame update
+    // public Transform[] spawnpointSides;
+    public float minDelay;
+    public float maxDelay;
+
+    public float DelayRate;
+    public float timeIncrease;
     void Start()
     {
-        StartCoroutine(SpawnLogos());
+        StartCoroutine(SpawnLogos(DelayRate));
     }
-    IEnumerator SpawnLogos(){
+    IEnumerator SpawnLogos(float firstDelay){
+        float spawnRateCountDown = timeIncrease;
+        float spawnCountDown = firstDelay;
         while (true){
-            float Delay = Random.Range(minDelay, maxDelay);
-            yield return new WaitForSeconds(Delay);
-
-            int spawnIndex = Random.Range(0, spawnPoints.Length);
-            Transform spawnPoint = spawnPoints[spawnIndex];
-            GameObject randomLogo = logos[Random.Range(0, logos.Length)];
-            Instantiate(randomLogo, spawnPoint.position, spawnPoint.rotation);      
+            yield return null;
+            spawnRateCountDown -= Time.deltaTime;
+            spawnCountDown     -= Time.deltaTime;
+            // should a new logo be spawned?
+            if (spawnCountDown < 0){
+                spawnCountDown += DelayRate;
+                int spawnIndex = Random.Range(0, spawnPoints.Length);
+                Transform spawnPoint = spawnPoints[spawnIndex];
+                // get a random logo from the list 
+                GameObject randomLogo = logos[Random.Range(0, logos.Length)];
+                Instantiate(randomLogo, spawnPoint.position, spawnPoint.rotation); 
+            }
+            //should the spawn rate increase?
+            if( spawnRateCountDown < 0 && DelayRate > 0.5 )
+             {
+                 spawnRateCountDown += timeIncrease;
+                 DelayRate -= 0.1f;
+             }
+ 
         }   
     }
 }

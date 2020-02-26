@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Logos2 : MonoBehaviour
+public class LogosMWC : MonoBehaviour
 {
     public GameObject explosion;
 
@@ -14,6 +14,6 @@ public class Logos2 : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        Destroy(gameObject,2f);
+        Destroy(gameObject, 2f);
     }
 }

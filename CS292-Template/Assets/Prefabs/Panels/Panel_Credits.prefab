@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12658979, y: 0.18410525}
   m_AnchorMax: {x: 0.8737549, y: 0.77300006}
-  m_AnchoredPosition: {x: 2.4, y: -2}
+  m_AnchoredPosition: {x: 2.399994, y: -2}
   m_SizeDelta: {x: 4.3999996, y: 13.400002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8050122430748977204
@@ -79,19 +79,6 @@ MonoBehaviour:
   m_Text: "Created by \nBishakha, Charles, and Nrepesh\n\nSpecial Thanks\nMidwest
     Conference\n\nCreated using \nUnity Personal\n\nSound\nFreesound.org\n\nGUI\nFree
     Fanstasy Game GUI"
---- !u!114 &1792049867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3415502294018337411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a254db57bbb679a419c83a85d5e39a4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 4602626149877887429}
 --- !u!1 &4602626149877887429
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.990566, b: 0.990566, a: 0.54901963}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -201,7 +188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29710132, y: 0.841}
   m_AnchorMax: {x: 0.6847549, y: 0.94755673}
-  m_AnchoredPosition: {x: 0.46249, y: -4.1}
+  m_AnchoredPosition: {x: 0.4624939, y: -4.100006}
   m_SizeDelta: {x: -0.9, y: 8.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4597774101628356134
@@ -350,7 +337,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1792049867}
+      objectReference: {fileID: 0}
     - target: {fileID: 5321115638504567641, guid: 4c817059761706445a41d4441af2dd23,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -468,12 +455,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c817059761706445a41d4441af2dd23, type: 3}
---- !u!1 &3415502294018337411 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1205167158454825863, guid: 4c817059761706445a41d4441af2dd23,
-    type: 3}
-  m_PrefabInstance: {fileID: 4602626148693973252}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5005163435347927430 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8838940683461720194, guid: 4c817059761706445a41d4441af2dd23,

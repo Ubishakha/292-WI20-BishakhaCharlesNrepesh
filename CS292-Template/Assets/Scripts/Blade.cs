@@ -17,7 +17,12 @@ public class Blade : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject gamePanel;
     public Text ScoreDisplay;
+    public Text HighScoreDisplay;
     public int score;
+    public AudioSource[] sounds;
+    public AudioSource slice;
+    public AudioSource bonus;
+    public AudioSource cheer;
 
     private void Start()
     {
@@ -25,6 +30,11 @@ public class Blade : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         circleCol = GetComponent<CircleCollider2D>();
         ScoreDisplay.text = score.ToString();
+        sounds = GetComponents<AudioSource>();
+        cheer = sounds[0];
+        slice = sounds[1];
+        bonus = sounds[2];
+        HighScoreDisplay.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
     }
     // Update is called once per frame
     void Update()
@@ -41,6 +51,10 @@ public class Blade : MonoBehaviour
         if (isCutting)
         {
             UpdateCutting();
+        }
+        if (PlayerPrefs.GetInt("Highscore", 0) == 0)
+        {
+            HighScoreDisplay.text = "0";
         }
     }
 
@@ -83,28 +97,30 @@ public class Blade : MonoBehaviour
         {
             score++;
             ScoreDisplay.text = score.ToString();
+            slice.Play();
         }
         else if (col.tag == "knox")
         {
-            if (gameOverPanel != null)
-            {
-                gameOverPanel.SetActive(true);
-
-            }
-            if (gameOverPanel != null && gamePanel.activeSelf == true)
-            {                
-                gamePanel.SetActive(false);
-            }
-        }
-        else if (col.tag == "mwc")
-        {
-            score += 10;
-            ScoreDisplay.text = score.ToString();
+            ;
         }
         else
         {
-            ;
-        }      
+            score += 10;
+            ScoreDisplay.text = score.ToString(); 
+            bonus.Play();
+            slice.Play();
+        }
+    
         ScoreDisplay.text = score.ToString();
+        if (score > PlayerPrefs.GetInt("Highscore", 0))
+        {
+            PlayerPrefs.SetInt("Highscore", score);
+        }
+        
+    }
+
+    public int getScore()
+    {
+        return score;
     }
 }

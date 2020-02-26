@@ -9,6 +9,11 @@ TagManager:
   - mwc
   - Resumebtn
   - ground
+  - knox
+  - Groundtrigger
+  - Canvas
+  - slider
+  - gameover
   layers:
   - Default
   - TransparentFX
