@@ -16,7 +16,7 @@ public class LogoScript : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 		rb.AddForce(transform.up * startForce, ForceMode2D.Impulse);
+		rb.AddTorque(Random.Range(-180, 180));
 	}
-
 
 }
