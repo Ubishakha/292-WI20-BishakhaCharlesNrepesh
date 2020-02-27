@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abf460a49b30214e829f6140578241f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oneLogo: {fileID: 2082015724399733041, guid: 8b3598b13cfb8a348a7ecb213dc8dcb6, type: 3}
+  oneLogo: {fileID: 2082015724399733041, guid: e381e81fd3e4e1946a57b6a6e9dcb40c, type: 3}
   spawnpointTop:
   - {fileID: 1024148190}
   - {fileID: 774806449}
@@ -2660,23 +2660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd11d60a5323b1746af0f0e87da5a058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logos:
-  - {fileID: 2688245310275405005, guid: b51ec5f4046c2f642aad8bd4741cba21, type: 3}
-  - {fileID: 7702220644594078135, guid: 2223d8a7a7406844897eaa81a7abf92b, type: 3}
-  - {fileID: 7463784479029067870, guid: 22f84ddc10e81b64b9fdb4b53ac54a60, type: 3}
-  - {fileID: 8268055928400242194, guid: c32d9aa5e94d5ff45a714e67d608a37f, type: 3}
-  - {fileID: 8569133449571643222, guid: 384990017952f894a9ec2395d2542a4c, type: 3}
-  - {fileID: 1231187900544039791, guid: b0e8b824075759b4999241353878eea9, type: 3}
-  - {fileID: 5912874425705044872, guid: 25325d8c79d6d1f43add80d7144b96e7, type: 3}
-  - {fileID: 9168533481610312034, guid: 58e05e894955517489bf263500fba171, type: 3}
-  - {fileID: 9191717672128562730, guid: 9312be6445030634f94eba3bcfbe2f8c, type: 3}
-  spawnPoints:
-  - {fileID: 1001612902}
-  - {fileID: 1491803206}
-  - {fileID: 1658637976}
-  - {fileID: 1197821358}
-  - {fileID: 394284620}
-  - {fileID: 490400013}
+  logoPrefab: {fileID: 0}
 --- !u!1 &1437603368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7500473720977474071, guid: e33b52a6d7627460a935a1d343d4780d,
@@ -3318,7 +3302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20573759, y: 0.28500003}
   m_AnchorMax: {x: 0.80673766, y: 0.5413655}
-  m_AnchoredPosition: {x: 249, y: 206}
+  m_AnchoredPosition: {x: 249, y: 205.99998}
   m_SizeDelta: {x: -400.2, y: -73.705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533819426
