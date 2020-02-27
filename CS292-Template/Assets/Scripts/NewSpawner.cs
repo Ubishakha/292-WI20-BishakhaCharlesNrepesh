@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mwc : MonoBehaviour
+public class NewSpawner : MonoBehaviour
 {
-    public GameObject[] twoLogos;    
+    public GameObject oneLogo;    
 
-    public Transform[] spawnpointSides;
+    public Transform[] spawnpointTop;
 
     public float DelayandSpawnRate = 5f;
     public float timeUntilSpawnRateIncrease = 10f;
@@ -34,11 +34,10 @@ public class mwc : MonoBehaviour
                 spawnCountDown += DelayandSpawnRate;
                 //pick randown spawnpoint    
            
-            GameObject randomLogo = twoLogos[Random.Range(0, twoLogos.Length)];
-            int spawnIndex2 = Random.Range(0, spawnpointSides.Length);
-            Transform spawnPoint2 = spawnpointSides[spawnIndex2];
+            int spawnIndex2 = Random.Range(0, spawnpointTop.Length);
+            Transform spawnPoint2 = spawnpointTop[spawnIndex2];
             
-            Instantiate(randomLogo, spawnPoint2.position, spawnPoint2.rotation);
+            Instantiate(oneLogo, spawnPoint2.position, spawnPoint2.rotation);
             }
             //should the spawn rate increase?
             // if countdown has ended and while delay rate is still greater than 0.1 so that logos don't stop spawning in between

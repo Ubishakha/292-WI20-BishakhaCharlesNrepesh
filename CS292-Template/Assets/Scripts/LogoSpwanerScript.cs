@@ -8,25 +8,34 @@ public class LogoSpwanerScript : MonoBehaviour
     // public GameObject mwc;
     public Transform[] spawnPoints;
     // public Transform[] spawnpointSides;
-    public float minDelay;
-    public float maxDelay;
+    // public float minDelay;
+    // public float maxDelay;
 
-    public float DelayRate;
-    public float timeIncrease;
+    public float DelayandSpawnRate = 1f;
+    public float timeUntilSpawnRateIncrease = 10f;
     void Start()
     {
-        StartCoroutine(SpawnLogos(DelayRate));
+        StartCoroutine(SpawnLogos(DelayandSpawnRate));
     }
     IEnumerator SpawnLogos(float firstDelay){
-        float spawnRateCountDown = timeIncrease;
+        // remaining time before delayandspawnrate is decreased
+        float spawnRateCountDown = timeUntilSpawnRateIncrease;
+        // remaining time before a new logo is spawned
         float spawnCountDown = firstDelay;
+        
         while (true){
             yield return null;
+            // begin countdown
             spawnRateCountDown -= Time.deltaTime;
+            // rate of logos appearing on screen decreases
             spawnCountDown     -= Time.deltaTime;
+            
             // should a new logo be spawned?
+            // if 1 decreases down to 0
             if (spawnCountDown < 0){
-                spawnCountDown += DelayRate;
+                // add the original delay rate to countdown
+                spawnCountDown += DelayandSpawnRate;
+                //pick randown spawnpoint    
                 int spawnIndex = Random.Range(0, spawnPoints.Length);
                 Transform spawnPoint = spawnPoints[spawnIndex];
                 // get a random logo from the list 
@@ -34,10 +43,13 @@ public class LogoSpwanerScript : MonoBehaviour
                 Instantiate(randomLogo, spawnPoint.position, spawnPoint.rotation); 
             }
             //should the spawn rate increase?
-            if( spawnRateCountDown < 0 && DelayRate > 0.5 )
+            // if countdown has ended and while delay rate is still greater than 0.1 so that logos don't stop spawning in between
+            if( spawnRateCountDown < 0 && DelayandSpawnRate > 0.1 )
              {
-                 spawnRateCountDown += timeIncrease;
-                 DelayRate -= 0.1f;
+                //  reset the countdown 
+                 spawnRateCountDown += timeUntilSpawnRateIncrease;
+                //  decrease the spwnrate by 0.05
+                 DelayandSpawnRate -= 0.1f;
              }
  
         }   
