@@ -49,7 +49,7 @@ public class LogoSpwanerScript : MonoBehaviour
                 //  reset the countdown 
                  spawnRateCountDown += timeUntilSpawnRateIncrease;
                 //  decrease the spwnrate by 0.05
-                 DelayandSpawnRate -= 0.05f;
+                 DelayandSpawnRate -= 0.03f;
              }
  
         }   

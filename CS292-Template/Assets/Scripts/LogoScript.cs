@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LogoScript : MonoBehaviour
 {
     public GameObject logoPrefab;
-	public float startForce = 10f;
+	private float startForce = 12f;
 
 	Rigidbody2D rb;
 
