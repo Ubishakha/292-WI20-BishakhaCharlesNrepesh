@@ -26,11 +26,7 @@ public class VolumeChange : MonoBehaviour
     private void Start()
     {
         blade = GameObject.FindGameObjectWithTag("Blade").GetComponent<Blade>();
-        //ground = GameObject.FindGameObjectWithTag("ground").GetComponent<Ground>();
-        //groundL = GameObject.FindGameObjectWithTag("ground").GetComponent<GroundLeft>();
-        //groundR = GameObject.FindGameObjectWithTag("ground").GetComponent<GroundRight>();
-
-        //gameOverPanel = GameObject.FindGameObjectWithTag("gameover").GetComponent<Panel_GameOver>();
+        
         audioSrc = GetComponent<AudioSource>();
         sounds = blade.GetComponents<AudioSource>();
         groundSound = ground.GetComponent<AudioSource>();
@@ -41,10 +37,7 @@ public class VolumeChange : MonoBehaviour
 
     private void Update()
     {
-        // if (gameScreenPanel.activeSelf == true) {
-        //     audioSrc.volume = audioSrc.volume / 2;
-        // }
-        // else{
+        
         audioSrc.volume = slider.value;
         sounds[0].volume = sliderSFX.value;
         sounds[1].volume = sliderSFX.value;
@@ -55,7 +48,7 @@ public class VolumeChange : MonoBehaviour
         gameOverSound.volume = sliderSFX.value;
         PlayerPrefs.SetFloat("slider", slider.value);
         PlayerPrefs.SetFloat("sliderSFX", sliderSFX.value);
-        // }
+        
     }
         
 

@@ -7,6 +7,8 @@ public class Logos : MonoBehaviour
 {
     public GameObject explosion;
     public AudioSource hitTrigger;
+
+    // destroys game object when tag blade or tag ground hits it and reduce lives
     
     void OnTriggerEnter2D(Collider2D col)
     {

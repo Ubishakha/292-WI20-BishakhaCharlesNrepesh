@@ -14,6 +14,7 @@ public class Blade : MonoBehaviour
     public GameObject bladeTrailPrefab;
     GameObject currBladeTrail;
 
+    //Panels and sounds
     public GameObject gameOverPanel;
     public GameObject gamePanel;
     public Text ScoreDisplay;
@@ -29,16 +30,17 @@ public class Blade : MonoBehaviour
         c = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         circleCol = GetComponent<CircleCollider2D>();
-        ScoreDisplay.text = score.ToString();
+        ScoreDisplay.text = score.ToString();               //display score
         sounds = GetComponents<AudioSource>();
         cheer = sounds[0];
         slice = sounds[1];
         bonus = sounds[2];
-        HighScoreDisplay.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
+        HighScoreDisplay.text = PlayerPrefs.GetInt("Highscore", 0).ToString();          //get high score
     }
     // Update is called once per frame
     void Update()
     {
+        // mouse button to make blade slice
         if (Input.GetMouseButtonDown(0))
         {
             StartCutting();
@@ -63,6 +65,7 @@ public class Blade : MonoBehaviour
         Vector2 newPosition = c.ScreenToWorldPoint(Input.mousePosition);
         rb.position = newPosition;
 
+        // Has to be faster than minimum velocity to register slice
         float velocity = (newPosition - previousPosition).magnitude * Time.deltaTime;
         if (velocity > minVel)
         {
@@ -77,6 +80,7 @@ public class Blade : MonoBehaviour
 
     void StartCutting()
     {
+        // Start trail and register slice
         isCutting = true;
         currBladeTrail = Instantiate(bladeTrailPrefab, transform);
         previousPosition = c.ScreenToWorldPoint(Input.mousePosition);
@@ -91,6 +95,7 @@ public class Blade : MonoBehaviour
         circleCol.enabled = false;
     }
 
+    // Check the tag and change the score accordingly 
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "logo")
@@ -110,7 +115,8 @@ public class Blade : MonoBehaviour
             bonus.Play();
             slice.Play();
         }
-    
+            
+        //Save player prefs 
         ScoreDisplay.text = score.ToString();
         if (score > PlayerPrefs.GetInt("Highscore", 0))
         {
