@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Quit : MonoBehaviour
 {
-    
+    //Saves player prefs and quits the application
     public void PlayerQuit()
     {
         Debug.Log("Player Quit The Game");

@@ -14,10 +14,10 @@ public class ExhaustScript : MonoBehaviour
 
     private void Start()
     {
-        camRipple = Camera.main.GetComponent<RipplePostProcessor>();
+        camRipple = Camera.main.GetComponent<RipplePostProcessor>();        //get camera object 
     }
 
-    // Update is called once per frame
+    // When lives are lost: 1. Smoke animation plays, 2. Phone vibrates, 3.lives flame sprite decreased, 4. Ripple effect 
     void Update()
     {
         if(Flame2.enabled == true )

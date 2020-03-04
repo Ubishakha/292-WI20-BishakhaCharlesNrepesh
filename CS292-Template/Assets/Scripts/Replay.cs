@@ -13,6 +13,7 @@ public class Replay : MonoBehaviour
     public Slider slider;
     public Slider sliderSFX;
 
+    //Saves slider values and player pref if game is replayed.
     public void Start()
     {
         slider.value = PlayerPrefs.GetFloat("slider");
