@@ -8,7 +8,7 @@ public class PauseScript : MonoBehaviour
     // Update is called once per frame
     public GameObject pausePanel;
 
-    // public static GameObject selectedBtn;
+    // Pauses the whole screen using Time.timeScale.
     void Update()
     {
         if (pausePanel.activeSelf == true){

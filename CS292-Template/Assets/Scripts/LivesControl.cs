@@ -19,7 +19,7 @@ public class LivesControl : MonoBehaviour
         Flame4.enabled = false;
     }
 
-    // Update is called once per frame
+    // First, second, third and forth sprite enables when the health decreases.  
     void Update()
     {
         if (health > 4) {

@@ -11,7 +11,7 @@ public class LogoScript : MonoBehaviour
 
 	Rigidbody2D rb;
 
-
+   //Starts the spawnner to spawn logos with rotation. 
 	void Start ()
 	{
         rb = GetComponent<Rigidbody2D>();

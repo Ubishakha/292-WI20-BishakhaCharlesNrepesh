@@ -14,6 +14,8 @@ public class Tutorial : MonoBehaviour
 
         // Update is called once per frame
 
+        //if highscore is less than 30 then the tutorial panel is gonna show up 
+
         if (PlayerPrefs.GetInt("Highscore", 0) < 30)
         {
             if (tutorialPanel != null)
@@ -32,6 +34,7 @@ public class Tutorial : MonoBehaviour
         }
     }
 
+    //Deletes highscore playerprefs
     public void Reset()
     {
         PlayerPrefs.DeleteKey("Highscore");

@@ -8,16 +8,14 @@ public class RestartScript : MonoBehaviour
 
     public void RestartGame()
     {
-        //store volume
-        //PlayerPrefs.SetInt("volume", volumeControl.VolumeChange.getVolume());
+        //store player prefs if game is restarted      
         PlayerPrefs.SetInt("restart", 1);
         SceneManager.LoadScene("Gameplay");        
     }
 
     public void goHome()
     {
-        //store volume
-        //PlayerPrefs.SetInt("volume", volumeControl.getVolume());
+        //store player prefs if player wantes to go home    
         PlayerPrefs.SetInt("restart", 0);
         SceneManager.LoadScene("Gameplay");
     }

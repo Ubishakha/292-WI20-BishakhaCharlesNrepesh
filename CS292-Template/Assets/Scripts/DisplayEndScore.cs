@@ -11,13 +11,9 @@ public class DisplayEndScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //display score after the game ends
         bladeScript = GameObject.FindGameObjectWithTag("Blade").GetComponent<Blade>();
         scoreText.text = bladeScript.getScore().ToString();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

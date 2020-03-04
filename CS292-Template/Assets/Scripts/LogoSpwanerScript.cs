@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LogoSpwanerScript : MonoBehaviour
-{public GameObject[] logos;
-    // public GameObject mwc;
+{
+    public GameObject[] logos;
     public Transform[] spawnPoints;
-    // public Transform[] spawnpointSides;
-    // public float minDelay;
-    // public float maxDelay;
+   
 
     public float DelayandSpawnRate = 1f;
     public float timeUntilSpawnRateIncrease = 10f;

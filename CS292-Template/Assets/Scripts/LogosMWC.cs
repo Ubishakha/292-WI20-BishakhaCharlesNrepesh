@@ -7,6 +7,7 @@ public class LogosMWC : MonoBehaviour
 {
     public GameObject explosion;
 
+    //Plays sound, reduce health associated with the MWC logo
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Blade")
